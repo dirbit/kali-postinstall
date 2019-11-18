@@ -6,7 +6,7 @@
 apt install -y open-vm-tools-desktop fuse network-manager-openvpn-gnome
 
 # Tools
-apt-get -y install vim tmux htop git curl python-pip rlwrap ncat golang
+apt-get -y install vim tmux htop git curl python-pip rlwrap ncat golang proxychains
 pip install pipenv
 
 # Dotfiles
@@ -38,6 +38,13 @@ git clone https://github.com/diego-treitos/linux-smart-enumeration
 git clone https://github.com/samratashok/nishang
 git clone --branch dev https://github.com/PowerShellMafia/PowerSploit
 # git clone https://github.com/BC-SECURITY/Empire
+go get github.com/ropnop/kerbrute
+
+## Impacket Bleeding Edge
+#git clone https://github.com/SecureAuthCorp/impacket
+#cd impacket && pipenv install
+#pipenv run python ./setup.py build && python ./setup.py install
+#cd /opt
 
 ## CrackMapExec
 apt-get install -y libssl-dev libffi-dev python-dev build-essential
@@ -48,9 +55,9 @@ cd /opt
 ln -s /root/.local/share/virtualenvs/CrackMapExec-*/bin/crackmapexec /usr/local/bin/cme
 
 ## Silent Trinity
-git clone https://github.com/byt3bl33d3r/SILENTTRINITY
-cd SILENTTRINITY && pipenv install
-cd /opt
+#git clone https://github.com/byt3bl33d3r/SILENTTRINITY
+#cd SILENTTRINITY && pipenv install
+#cd /opt
 
 
 
@@ -74,10 +81,9 @@ chmod +x $IDA_VERSION && ./$IDA_VERSION --mode unattended && rm -f $IDA_VERSION
 rm ~/Desktop/IDA\ Free.desktop
 ln -s /opt/idafree-7.0/ida64 /usr/local/bin/ida64
 
-# PEDA
-git clone https://github.com/longld/peda.git ~/peda
-echo "source ~/peda/peda.py" >> ~/.gdbinit
-
+# GEF
+wget -O ~/.gdbinit-gef.py -q https://github.com/hugsy/gef/raw/master/gef.py
+echo source ~/.gdbinit-gef.py >> ~/.gdbinit
 
 ##############################
 #            CTFy            #
