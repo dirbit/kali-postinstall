@@ -16,3 +16,6 @@ cargo build --release
 cp target/release/alacritty /usr/local/bin
 cd ..
 rm -rf alacritty
+
+# Copy dotfiles
+cp -rT dotfiles/ $HOME
