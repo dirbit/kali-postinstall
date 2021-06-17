@@ -146,3 +146,7 @@ exec_always --no-startup-id ~/.config/i3/clipboard_fix.sh
 
 # feh to set the wallpaper
 exec_always --no-startup-id ~/.config/feh/set_wallpaper.sh
+
+# Compton to manage shadows and opacity
+exec_always --no-startup-id compton -b --config ~/.config/compton/compton.conf
+
