@@ -5,7 +5,11 @@ if ! [ $(id -u) = 0 ]; then
     exit 1
 fi
 
+cd ..
+mv kali-postinstall $HOME
 cd $HOME
+cd kali-postinstall
+chown root:root . -R
 
 # Get the root user back
 echo "Set the new root password"
