@@ -141,6 +141,8 @@ bindsym $mod+d exec "rofi -show run"
 
 
 # --- Execs ---
+exec --no-startup-id nm-applet
+
 # VM Clipboard Fix
 exec_always --no-startup-id ~/.config/i3/clipboard_fix.sh
 
