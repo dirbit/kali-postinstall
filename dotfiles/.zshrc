@@ -38,6 +38,7 @@ bindkey "^[[1;5D" backward-word
 export GOPATH=$HOME/go
 export LOCALBIN=$HOME/.local/bin
 export PATH=$PATH:$LOCALBIN:$GOPATH/bin
-export EDITOR='vim'
+export EDITOR='nvim'
 
+alias vim="nvim"
 alias ll="ls -lah --color=auto"
