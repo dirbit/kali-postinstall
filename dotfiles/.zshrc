@@ -30,6 +30,10 @@ add-zsh-hook precmd gentoo_precmd
 
 PROMPT='%(!.%B%F{red}.%B%F{green}%n@)%m %F{blue}%(!.%1~.%~) ${vcs_info_msg_0_}%F{blue}%(!.#.$)%k%b%f '
 
+# Fix Ctrl+Arrow
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+
 # Additional Stuff
 export GOPATH=$HOME/go
 export LOCALBIN=$HOME/.local/bin
