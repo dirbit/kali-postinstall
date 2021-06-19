@@ -66,3 +66,10 @@ chmod +x /usr/sbin/max
 wget https://github.com/ropnop/go-windapsearch/releases/download/v0.3.0/windapsearch-linux-amd64
 mv windapsearch-linux-amd64 /usr/local/bin/windapsearch
 
+# Some patching
+echo '\nexport CHROMIUM_FLAGS="$CHROMIUM_FLAGS --no-sandbox --disable-xss-auditor"' >> /etc/chromium.d/default-flags
+ln -s $(which crackmapexec) /usr/local/bin/cme
+
+# Add service file for neo4j
+cp $BASE/stuff/neo4j.service /etc/systemd/system
+systemctl daemon-reload

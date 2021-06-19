@@ -1,0 +1,15 @@
+[Unit]
+Description=Neo4j
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/usr/bin/neo4j console
+Restart=on-failure
+User=root
+Group=root
+LimitNOFILE=60000
+TimeoutSec=120
+
+[Install]
+WantedBy=multi-user.target

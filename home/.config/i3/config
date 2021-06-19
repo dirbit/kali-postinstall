@@ -114,10 +114,10 @@ bar {
         height 26
         font pango:Hack 10
         colors {
-            statusline #EEEEEE
-            background #1C1D2B88
+            statusline #FCFCFCFa
+            background #2D2A2E88
             focused_workspace #282A3E88 #282A3E88 #FFFFFF
-            statusline #E6FFF5
+            statusline #FFF1F3
         }
 }
 
