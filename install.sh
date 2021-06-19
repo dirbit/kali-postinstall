@@ -17,7 +17,7 @@ echo 'root:a' | chpasswd
 apt-get install -y kali-desktop-i3-gaps i3blocks rofi feh compton
 
 # Install general tools
-apt-get install -y lxappearance htop nvim
+apt-get install -y lxappearance htop neovim
 
 # Install Alacritty if it does not exist
 if ! [ -x /usr/local/bin/alacritty ]; then
@@ -34,6 +34,7 @@ fi
 
 # Copy dotfiles, wallpaper and so on
 cp -rT $BASE/home $HOME
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Install additional tools
 # apt

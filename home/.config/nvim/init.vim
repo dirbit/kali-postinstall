@@ -1,3 +1,9 @@
+let mapleader=","
+
+nmap <leader>s :w!<cr>
+map <leader>pp :setlocal paste!<cr>
+noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
+
 syntax enable
 
 set cmdheight=1
@@ -15,9 +21,4 @@ set wrap
 set number
 set ruler
 set hlsearch
-
-set mapleader = ","
-nmap <leader>s :w!<cr>
-map <leader>pp :setlocal paste!<cr>
-noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
