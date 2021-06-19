@@ -33,7 +33,7 @@ if ! [ -x /usr/local/bin/alacritty ]; then
 fi
 
 # Copy dotfiles, wallpaper and so on
-sh -c "RUNZSH='no' $(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "KEEP_ZSHRC='yes' RUNZSH='no' $(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 cp -rT $BASE/home $HOME
 
 # Install additional tools
