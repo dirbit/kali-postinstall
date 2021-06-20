@@ -91,7 +91,7 @@ colors:
     blue:    '#FC9867'
     magenta: '#AB9DF2'
     cyan:    '#78DCE8'
-    white:   '#2D2A2E'
+    white:   '#FFFFFF'
 
 
 selection:
