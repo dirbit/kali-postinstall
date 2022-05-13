@@ -15,9 +15,9 @@ list_apt=(
     tmux
     chromium
     openssl
-    python3.9       # some tools have deprecation 
-    python3-pip     # warnings on 3.10 so we stay
-    python3.9-venv  # on 3.9 for now
+    python3
+    python3-pip
+    python3-venv
     golang
     binutils
     dnsutils  # for dig
