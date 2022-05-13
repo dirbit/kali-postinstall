@@ -54,6 +54,7 @@ list_apt=(
     dbeaver
     freerdp2-x11  # pass the hash rdp
 
+    libpcap-dev  # PCredz
     libssl-dev  # DonPAPI
     swig  # DonPAPI
 )
