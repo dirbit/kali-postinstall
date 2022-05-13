@@ -16,7 +16,7 @@ list_apt=(
     chromium
     openssl
     python3.9       # some tools have deprecation 
-    python3.9-pip   # warnings on 3.10 so we stay
+    python3-pip     # warnings on 3.10 so we stay
     python3.9-venv  # on 3.9 for now
     golang
     binutils
@@ -74,7 +74,7 @@ list_pip=(
 )
 
 for p in "${list_pip[@]}"; do
-    pip install $p
+    python3.9 -m pip install $p
 done
 
 
@@ -96,8 +96,8 @@ list_pipx=(
     git+https://github.com/AdrianVollmer/PowerHub
 )
 
-python3 -m pip install --upgrade pip
-python3 -m pip install pipx
+python3.9 -m pip install --upgrade pip
+python3.9 -m pip install pipx
 
 for p in "${list_pipx[@]}"; do
     pipx install $p
