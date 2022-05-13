@@ -1,0 +1,2 @@
+alias j="john --wordlist=/usr/share/wordlists/rockyou.txt"
+alias www="python3 -m http.server"
