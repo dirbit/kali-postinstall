@@ -53,6 +53,8 @@ list_apt=(
     eyewitness
     bloodhound
     dbeaver
+    ghidra
+    wireshark
     freerdp2-x11  # pass the hash rdp
 
     libpcap-dev  # PCredz
