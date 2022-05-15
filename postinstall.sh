@@ -24,6 +24,7 @@ list_apt=(
     smbclient
     default-mysql-client
     postgresql-client-common
+    docker.io
 
     dos2unix
     python3-impacket
