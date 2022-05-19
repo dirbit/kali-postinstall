@@ -30,6 +30,7 @@ list_apt=(
     python3-impacket
     impacket-scripts
     metasploit-framework
+    feroxbuster
     ncat
     socat
     amass
