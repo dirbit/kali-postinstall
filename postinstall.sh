@@ -25,6 +25,7 @@ list_apt=(
     default-mysql-client
     postgresql-client-common
     docker.io
+    libreoffice
 
     dnsrecon
     subfinder
