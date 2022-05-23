@@ -26,6 +26,8 @@ list_apt=(
     postgresql-client-common
     docker.io
 
+    dnsrecon
+    subfinder
     dos2unix
     python3-impacket
     impacket-scripts
