@@ -60,6 +60,7 @@ list_apt=(
     wireshark
     freerdp2-x11  # pass the hash rdp
 
+    libffi-dev  # pyenv/python
     libpcap-dev  # PCredz
     libssl-dev  # DonPAPI
     swig  # DonPAPI
