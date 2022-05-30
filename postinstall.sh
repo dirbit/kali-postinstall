@@ -27,6 +27,7 @@ list_apt=(
     docker.io
     libreoffice
 
+    nikto
     dnsrecon
     subfinder
     dos2unix
