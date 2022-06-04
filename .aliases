@@ -1,4 +1,4 @@
 alias j="john --wordlist=/usr/share/wordlists/rockyou.txt"
 alias serve="python3 -m http.server"
 
-alias oneforall="docker run -it --rm -v `pwd`/results:/OneForAll/results shmilylty/oneforall"
+alias oneforall="docker run -it --rm -v `pwd`/oneforall:/OneForAll/results shmilylty/oneforall"
