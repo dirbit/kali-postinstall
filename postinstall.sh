@@ -117,6 +117,7 @@ done
 # go
 
 list_go=(
+    github.com/nao1215/gup@latest
     github.com/jpillora/chisel@latest
     github.com/ropnop/kerbrute@latest
     github.com/sensepost/gowitness@latest
