@@ -150,7 +150,7 @@ done
 
 # special stuff
 
-cp "$SCRIPT_DIR/.aliases" ~
+ln -s "$SCRIPT_DIR/.aliases" ~/.aliases
 
 cd /usr/share/wordlists
 gunzip rockyou.txt.gz
