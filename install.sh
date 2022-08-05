@@ -8,6 +8,9 @@ SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
 list_apt=(
     open-vm-tools
+    open-vm-tools-desktop
+    kali-tweaks
+    
     vim
     htop
     curl
