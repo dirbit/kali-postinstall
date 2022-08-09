@@ -64,6 +64,7 @@ list_apt=(
     ghidra
     wireshark
     freerdp2-x11  # pass the hash rdp
+    apktool
 
     libffi-dev  # pyenv/python
     libpcap-dev  # PCredz
