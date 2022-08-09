@@ -69,6 +69,7 @@ list_apt=(
     libpcap-dev  # PCredz
     libssl-dev  # DonPAPI
     swig  # DonPAPI
+    jadx  # apkleaks
 )
 
 apt-get update && \
@@ -97,6 +98,7 @@ list_pipx=(
     pipenv
     poetry
     ssh-audit
+    apkleaks
 
     git+https://github.com/byt3bl33d3r/CrackMapExec
     git+https://github.com/Hackndo/lsassy
