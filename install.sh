@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
-
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
+# https://serverfault.com/a/227194
+export DEBIAN_FRONTEND=noninteractive
 
 # apt
 
@@ -74,11 +75,11 @@ list_apt=(
 )
 
 apt-get update && \
-apt-get upgrade -y && \
-apt-get autoremove -y
+apt-get upgrade -yq && \
+apt-get autoremove -yq
 
 for p in "${list_apt[@]}"; do
-    apt-get install -y $p
+    apt-get install -yq $p
 done
 
 
