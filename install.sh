@@ -66,6 +66,8 @@ list_apt=(
     wireshark
     freerdp2-x11  # pass the hash rdp
     apktool
+    sqlmap
+    exploitdb
 
     libffi-dev  # pyenv/python
     libpcap-dev  # PCredz
