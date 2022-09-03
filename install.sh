@@ -30,6 +30,8 @@ list_apt=(
     postgresql-client-common
     docker.io
     libreoffice
+    wireguard
+    resolvconf  # wireguard
 
     nikto
     dnsrecon
