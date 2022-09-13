@@ -72,6 +72,7 @@ list_apt=(
     apktool
     sqlmap
     exploitdb
+    windows-binaries
 
     libffi-dev  # pyenv/python
     libpcap-dev  # PCredz
