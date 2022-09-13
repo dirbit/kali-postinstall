@@ -35,6 +35,7 @@ list_apt=(
     libxml2-dev  # pywsus
     libxslt-dev  # pywsus
     sqlitebrowser
+    xtightvncviewer
 
     nikto
     dnsrecon
