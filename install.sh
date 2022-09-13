@@ -136,6 +136,7 @@ list_go=(
     github.com/ropnop/kerbrute@latest
     github.com/sensepost/gowitness@latest
     github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
+    github.com/RedTeamPentesting/pretender@latest
 )
 
 for p in "${list_go[@]}"; do
