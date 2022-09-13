@@ -32,6 +32,8 @@ list_apt=(
     libreoffice
     wireguard
     resolvconf  # wireguard
+    libxml2-dev  # pywsus
+    libxslt-dev  # pywsus
 
     nikto
     dnsrecon
