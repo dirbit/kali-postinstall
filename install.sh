@@ -19,6 +19,7 @@ list_apt=(
     tmux
     chromium
     openssl
+    python2  # sadge
     python3
     python3-pip
     python3-venv
@@ -178,3 +179,8 @@ echo 'export CHROMIUM_FLAGS="$CHROMIUM_FLAGS --no-sandbox --disable-xss-auditor"
 ln -s /opt/Max/max.py /usr/sbin/max && \
 chmod +x /usr/sbin/max
 
+# install pip for python2
+curl https://bootstrap.pypa.io/pip/2.7/get-pip.py | python2 -
+
+# fix adidnsdump - install requirement that isn't listed
+/root/.local/pipx/venvs/adidnsdump/bin/python -m pip install pycryptodome
