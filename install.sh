@@ -37,6 +37,8 @@ list_apt=(
     libxslt-dev  # pywsus
     sqlitebrowser
     xtightvncviewer
+    kmail
+    pst-utils
 
     nikto
     dnsrecon
