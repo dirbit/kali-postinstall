@@ -86,6 +86,7 @@ list_apt=(
     libssl-dev  # DonPAPI
     swig  # DonPAPI
     jadx  # apkleaks
+    libkrb5-dev  # pyverview
 )
 
 apt-get update && \
@@ -125,6 +126,7 @@ list_pipx=(
     git+https://github.com/cddmp/enum4linux-ng
     git+https://github.com/ly4k/Certipy
     git+https://github.com/AdrianVollmer/PowerHub
+    git+https://github.com/the-useless-one/pywerview
 )
 
 python3 -m pip install --upgrade pip
