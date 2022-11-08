@@ -11,6 +11,7 @@ list_apt=(
     open-vm-tools
     open-vm-tools-desktop
     kali-tweaks
+    kali-defaults
     
     vim
     htop
@@ -37,8 +38,9 @@ list_apt=(
     libxslt-dev  # pywsus
     sqlitebrowser
     xtightvncviewer
-    kmail
+    thunderbird
     pst-utils
+    ripgrep
 
     nikto
     dnsrecon
