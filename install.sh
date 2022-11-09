@@ -32,15 +32,14 @@ list_apt=(
     postgresql-client-common
     docker.io
     libreoffice
-    wireguard
-    resolvconf  # wireguard
-    libxml2-dev  # pywsus
-    libxslt-dev  # pywsus
     sqlitebrowser
     xtightvncviewer
     thunderbird
     pst-utils
     ripgrep
+    freerdp2-x11  # pass the hash rdp
+    wireguard
+    resolvconf  # wireguard
 
     nikto
     dnsrecon
@@ -75,12 +74,13 @@ list_apt=(
     dbeaver
     ghidra
     wireshark
-    freerdp2-x11  # pass the hash rdp
     apktool
     sqlmap
     exploitdb
     windows-binaries
 
+    libxml2-dev  # pywsus
+    libxslt-dev  # pywsus
     libffi-dev  # pyenv/python
     libpcap-dev  # PCredz
     libssl-dev  # DonPAPI
@@ -177,16 +177,23 @@ done
 ln -s "$SCRIPT_DIR/.aliases" ~/.aliases
 
 cd /usr/share/wordlists
-gunzip rockyou.txt.gz
+[ -f rockyou.txt ] || gunzip rockyou.txt.gz
 
 # add flags to chromium so it works (TM)
-echo 'export CHROMIUM_FLAGS="$CHROMIUM_FLAGS --no-sandbox --disable-xss-auditor"' >> /etc/chromium.d/default-flags
+CHROMIUM_FLAGS='export CHROMIUM_FLAGS="$CHROMIUM_FLAGS --no-sandbox --disable-xss-auditor"'
+CHROMIUM_FLAGS_FILE=/etc/chromium.d/default-flags
+
+if ! grep -Fxq "$CHROMIUM_FLAGS" "$CHROMIUM_FLAGS_FILE"; then
+    echo "$CHROMIUM_FLAGS" >> "$CHROMIUM_FLAGS_FILE"
+fi
 
 ln -s /opt/Max/max.py /usr/sbin/max && \
 chmod +x /usr/sbin/max
 
 # install pip for python2
-curl https://bootstrap.pypa.io/pip/2.7/get-pip.py | python2 -
+if ! command -v pip2 &> /dev/null; then
+    curl https://bootstrap.pypa.io/pip/2.7/get-pip.py | python2 -
+fi
 
 # fix adidnsdump - install requirement that isn't listed
 /root/.local/pipx/venvs/adidnsdump/bin/python -m pip install pycryptodome
