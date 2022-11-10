@@ -127,6 +127,7 @@ list_pipx=(
     git+https://github.com/ly4k/Certipy
     git+https://github.com/AdrianVollmer/PowerHub
     git+https://github.com/the-useless-one/pywerview
+    git+https://github.com/login-securite/DonPAPI
 )
 
 python3 -m pip install --upgrade pip
@@ -162,7 +163,6 @@ list_git=(
     https://github.com/diego-treitos/linux-smart-enumeration
     https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite
     https://github.com/lgandx/PCredz
-    https://github.com/login-securite/DonPAPI
     https://github.com/knavesec/Max
 )
 
