@@ -198,3 +198,6 @@ fi
 
 # fix adidnsdump - install requirement that isn't listed
 /root/.local/pipx/venvs/adidnsdump/bin/python -m pip install pycryptodome
+
+# fix pywerview - install dsinternals (upstream bug from impacket)
+/root/.local/pipx/venvs/pywerview/bin/python -m pip install dsinternals
