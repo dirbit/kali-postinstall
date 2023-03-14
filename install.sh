@@ -116,6 +116,7 @@ list_pipx=(
     poetry
     ssh-audit
     apkleaks
+    powerhub
 
     git+https://github.com/byt3bl33d3r/CrackMapExec
     git+https://github.com/Hackndo/lsassy
@@ -125,7 +126,6 @@ list_pipx=(
     git+https://github.com/sshuttle/sshuttle
     git+https://github.com/cddmp/enum4linux-ng
     git+https://github.com/ly4k/Certipy
-    git+https://github.com/AdrianVollmer/PowerHub
     git+https://github.com/the-useless-one/pywerview
     git+https://github.com/login-securite/DonPAPI
     git+https://github.com/p0dalirius/Coercer
