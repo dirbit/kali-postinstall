@@ -43,6 +43,7 @@ list_apt=(
 
     nikto
     dnsrecon
+    massdns
     subfinder
     dos2unix
     python3-impacket
@@ -118,6 +119,7 @@ list_pipx=(
     apkleaks
     powerhub
 
+    git+https://github.com/vortexau/dnsvalidator
     git+https://github.com/byt3bl33d3r/CrackMapExec
     git+https://github.com/Hackndo/lsassy
     git+https://github.com/dirkjanm/adidnsdump
@@ -146,8 +148,11 @@ list_go=(
     github.com/jpillora/chisel@latest
     github.com/ropnop/kerbrute@latest
     github.com/sensepost/gowitness@latest
-    github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
     github.com/RedTeamPentesting/pretender@latest
+    github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
+    github.com/projectdiscovery/katana/cmd/katana@latest
+    github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
+    github.com/projectdiscovery/shuffledns/cmd/shuffledns@latest
 )
 
 for p in "${list_go[@]}"; do
@@ -175,6 +180,8 @@ done
 
 # special stuff
 
+curl https://pyenv.run | bash
+
 ln -s "$SCRIPT_DIR/.aliases" ~/.aliases
 
 cd /usr/share/wordlists
@@ -198,6 +205,3 @@ fi
 
 # fix adidnsdump - install requirement that isn't listed
 /root/.local/pipx/venvs/adidnsdump/bin/python -m pip install pycryptodome
-
-# fix pywerview - install dsinternals (upstream bug from impacket)
-/root/.local/pipx/venvs/pywerview/bin/python -m pip install dsinternals
