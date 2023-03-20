@@ -130,6 +130,7 @@ list_pipx=(
     git+https://github.com/the-useless-one/pywerview
     git+https://github.com/login-securite/DonPAPI
     git+https://github.com/p0dalirius/Coercer
+    git+https://github.com/vortexau/dnsvalidator
 )
 
 python3 -m pip install --upgrade pip
