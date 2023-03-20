@@ -114,7 +114,6 @@ done
 
 list_pipx=(
     pipenv
-    poetry
     ssh-audit
     apkleaks
     powerhub
@@ -139,6 +138,11 @@ python3 -m pip install pipx
 for p in "${list_pipx[@]}"; do
     pipx install $p
 done
+
+
+# poetry
+
+curl -sSL https://install.python-poetry.org | python3 -
 
 
 # go
