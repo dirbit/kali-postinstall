@@ -119,7 +119,6 @@ list_pipx=(
     apkleaks
     powerhub
 
-    git+https://github.com/vortexau/dnsvalidator
     git+https://github.com/byt3bl33d3r/CrackMapExec
     git+https://github.com/Hackndo/lsassy
     git+https://github.com/dirkjanm/adidnsdump
